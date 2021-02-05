@@ -222,6 +222,6 @@ legend.onAdd = function() {
       .addTo(tectonicPlates);
 
       // Then add the tectonicplates layer to the map.
-      tectonicplates.addTo(map);
+      tectonicPlates.addTo(map);
     });
 });
