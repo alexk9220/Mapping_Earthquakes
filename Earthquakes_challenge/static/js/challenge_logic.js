@@ -160,7 +160,7 @@ function getRadiuss(magnitude1) {
 // sets the style of the circle, and displays the magnitude and location of the earthquake
 //  after the marker has been created and styled.
 L.geoJson(major, {
-  pointToLayer1: function(feature1, latlng1) {
+  pointToLayer: function(feature1, latlng1) {
     console.log(major);
     return L.circleMarker(latlng1);
   },
@@ -216,7 +216,7 @@ legend.onAdd = function() {
       // Adding our geoJSON data, along with style information, to the tectonicplates
       // layer.
       L.geoJson(plateData, {
-        color: "#ff6500",
+        color: "red",
         weight: 2
       })
       .addTo(tectonicPlates);
